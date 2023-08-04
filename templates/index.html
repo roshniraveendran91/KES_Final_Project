@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact Form 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/css/style.css">
+<style>
+        /* Add spacing above and to the left of the form elements */
+        .form-group {
+            padding-top: 50px; /* Add 10px of top padding */
+            padding-left: 100px; /* Add 10px of left padding */
+        }
+
+    </style>
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Respiratory Illness Predictor</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+							<div class="row">
+											<div class="col-md-6">
+											<div id="form-message-success" class="mb-4">
+											Please fillout the details below!
+											</div>
+											</div>
+							</div>
+										<div class="row">
+											<div class="col-md-6"> 
+												<div class="form-group">
+													   <label>Age Group:</label>
+        <select name="age_group">
+            <option value="children">Children</option>
+            <option value="infants">Infants</option>
+            <option value="youngAdults">Young Adults</option>
+            <option value="middleAged">Middle-Aged</option>
+            <option value="elderly">Elderly</option>
+        </select>
+													</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+												 <label>Gender:</label>
+													<input type="radio" name="gender" value="female"> Female
+													<input type="radio" name="gender" value="male"> Male<br>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Family History of Respiratory Illness:</label>
+        <input type="radio" name="family_history" value="Y"> Yes
+        <input type="radio" name="family_history" value="N"> No<br>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<label>Smoking History:</label>
+        <input type="radio" name="smoking_history" value="Y"> Yes
+        <input type="radio" name="smoking_history" value="N"> No<br>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+<label>Duration of Symptoms:</label>
+        <select name="duration">
+            <option value="<1 week">Less than 1 week</option>
+            <option value=">1 week, <4 weeks">1 to 4 weeks</option>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+        </select><br>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													 <label>Chest Pain:</label>
+        <input type="radio" name="chest_pain" value="Y"> Yes
+        <input type="radio" name="chest_pain" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													 <label>Cough Type:</label>
+        <select name="cough">
+            <option value="dry">Dry</option>
+            <option value="productive">Productive</option>
+        </select><br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+											 <label>Coughing Up Blood:</label>
+        <input type="radio" name="coughing_up_blood" value="Y"> Yes
+        <input type="radio" name="coughing_up_blood" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+<label>Fever:</label>
+        <input type="radio" name="fever" value="Y"> Yes
+        <input type="radio" name="fever" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+<label>Rapid Breathing:</label>
+        <input type="radio" name="rapid_breathing" value="Y"> Yes
+        <input type="radio" name="rapid_breathing" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+ <label>Rapid Heartbeat:</label>
+        <input type="radio" name="rapid_heartbeat" value="Y"> Yes
+        <input type="radio" name="rapid_heartbeat" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+    <label>Shortness of Breath:</label>
+        <input type="radio" name="shortness_of_breath" value="Y"> Yes
+        <input type="radio" name="shortness_of_breath" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+<label>Wheezing:</label>
+        <input type="radio" name="wheezing" value="Y"> Yes
+        <input type="radio" name="wheezing" value="N"> No<br>
+												</div>
+											</div>
+
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Predict" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+
+
+				          </div>
+
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="static/js/jquery.min.js"></script>
+  <script src="static/js/popper.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery.validate.min.js"></script>
+  <script src="static/js/main.js"></script>
+
+	</body>
+</html>
+
